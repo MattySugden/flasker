@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is how we use names</title>
+</head>
+<body>
+
+<h1>My name is {{ username | capitalize }}</h1>
+<p>Welcome {{ first_name | lower }} to my safe website</p>
+<p>Welcome {{ stuff | title }} to my safe website</p>
+
+<p>I like {{ favourite_pizza }} for my dinner</p>
+
+<h3>My favourite pizzas</h3>
+    {% for topping in favourite_pizza  %}
+        {{ topping }} <br/>
+    {% endfor %}
+
+</body>
+</html>
